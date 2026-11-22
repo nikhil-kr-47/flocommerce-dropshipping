@@ -13,17 +13,14 @@ export default function Footer() {
         {/* Main Footer Row */}
         <div className="flex flex-col md:flex-row items-center justify-between gap-6 pb-6 border-b border-slate-800/80">
           <div className="flex items-center gap-3">
-            <div className="w-8 h-8 rounded-lg bg-emerald-500 font-black text-slate-950 flex items-center justify-center text-sm">
-              F
-            </div>
-            <div>
-              <span className="font-bold text-white text-sm tracking-wider">
-                FLOCOMMERCE
-              </span>
-              <span className="block text-[11px] text-slate-500">
-                Dropshipping in the Gulf · Powered by Zambeel
-              </span>
-            </div>
+            <img 
+              src="/flocommerce-logo.jpg" 
+              alt="FloCommerce" 
+              className="h-7 w-auto object-contain rounded-md"
+            />
+            <span className="block text-[11px] text-slate-500">
+              Dropshipping in the Gulf · Powered by Zambeel
+            </span>
           </div>
 
           <div className="flex flex-wrap items-center gap-6 text-xs">

@@ -108,7 +108,7 @@ export default function HeroSection({ onStartApplication }) {
                 type="submit"
                 className="w-full py-4 px-6 rounded-xl font-black text-sm uppercase tracking-wider text-slate-950 bg-gradient-to-r from-emerald-400 via-teal-300 to-cyan-400 hover:from-emerald-300 hover:to-cyan-300 shadow-glow-emerald hover:shadow-emerald-500/50 hover:scale-[1.01] active:scale-[0.99] transition-all flex items-center justify-center gap-2 cursor-pointer"
               >
-                <span>Get Started — Answer 4 Quick Questions</span>
+                <span>Start now</span>
                 <ArrowRight className="w-4 h-4" />
               </button>
             </form>
