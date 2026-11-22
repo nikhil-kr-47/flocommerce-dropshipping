@@ -30,7 +30,7 @@ export default function HeroSection({ onStartApplication }) {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Top Proposal Badge (from Claude format) */}
-        <div className="flex items-center justify-center mb-8">
+        <div className="flex items-center justify-center mb-6">
           <div className="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-slate-900/90 border border-slate-700/80 text-xs text-slate-300 shadow-md">
             <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
             <span className="text-slate-400 font-mono">Confidential Proposal</span>
@@ -39,44 +39,8 @@ export default function HeroSection({ onStartApplication }) {
           </div>
         </div>
 
-        {/* Center Main Headline (Exact Claude copy) */}
-        <div className="text-center max-w-4xl mx-auto mb-10">
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight leading-[1.12] mb-6">
-            Stop fighting RTO in India.{' '}
-            <br className="hidden sm:inline" />
-            <span className="text-gradient-emerald">
-              Earn 5x the margin
-            </span>{' '}
-            dropshipping in the Gulf.
-          </h1>
-
-          <p className="text-base sm:text-lg text-slate-300 font-normal leading-relaxed max-w-3xl mx-auto">
-            We build your high-converting store, pick proven winning products, and handle fulfillment with Zambeel — you never touch inventory and collect weekly profits directly in your Indian bank.
-          </p>
-
-          {/* Quick value props */}
-          <div className="flex flex-wrap items-center justify-center gap-6 mt-6 text-xs sm:text-sm text-slate-300 font-medium">
-            <span className="flex items-center gap-2">
-              <CheckCircle2 className="w-4 h-4 text-emerald-400" />
-              <span>5x Higher Margins</span>
-            </span>
-            <span className="flex items-center gap-2">
-              <CheckCircle2 className="w-4 h-4 text-emerald-400" />
-              <span>70–80% Delivery Rate</span>
-            </span>
-            <span className="flex items-center gap-2">
-              <CheckCircle2 className="w-4 h-4 text-emerald-400" />
-              <span>1–2 Days Gulf Delivery</span>
-            </span>
-            <span className="flex items-center gap-2">
-              <CheckCircle2 className="w-4 h-4 text-emerald-400" />
-              <span>Every Monday Payout</span>
-            </span>
-          </div>
-        </div>
-
-        {/* Hero Section Lead Form (Replaces book a meeting page, right in hero) */}
-        <div className="max-w-2xl mx-auto mb-16" id="hero-form">
+        {/* Hero Section Lead Form - Placed ABOVE the headline & tagline */}
+        <div className="max-w-2xl mx-auto mb-14" id="hero-form">
           <div className="p-6 sm:p-8 rounded-3xl bg-[#0e1730]/95 border-2 border-emerald-500/40 shadow-2xl backdrop-blur-xl">
             <div className="text-center mb-6">
               <span className="inline-block px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 text-xs font-bold uppercase tracking-wider mb-2">
@@ -153,6 +117,42 @@ export default function HeroSection({ onStartApplication }) {
               <span>🔒 Zero upfront stock capital needed</span>
               <span className="text-emerald-400 font-medium">50% Off Q4 Offer Active</span>
             </div>
+          </div>
+        </div>
+
+        {/* Center Main Headline & Tagline (Positioned below the form) */}
+        <div className="text-center max-w-4xl mx-auto mb-14">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight leading-[1.12] mb-6">
+            Stop fighting RTO in India.{' '}
+            <br className="hidden sm:inline" />
+            <span className="text-gradient-emerald">
+              Earn 5x the margin
+            </span>{' '}
+            dropshipping in the Gulf.
+          </h1>
+
+          <p className="text-base sm:text-lg text-slate-300 font-normal leading-relaxed max-w-3xl mx-auto">
+            We build your high-converting store, pick proven winning products, and handle fulfillment with Zambeel — you never touch inventory and collect weekly profits directly in your Indian bank.
+          </p>
+
+          {/* Quick value props */}
+          <div className="flex flex-wrap items-center justify-center gap-6 mt-6 text-xs sm:text-sm text-slate-300 font-medium">
+            <span className="flex items-center gap-2">
+              <CheckCircle2 className="w-4 h-4 text-emerald-400" />
+              <span>5x Higher Margins</span>
+            </span>
+            <span className="flex items-center gap-2">
+              <CheckCircle2 className="w-4 h-4 text-emerald-400" />
+              <span>70–80% Delivery Rate</span>
+            </span>
+            <span className="flex items-center gap-2">
+              <CheckCircle2 className="w-4 h-4 text-emerald-400" />
+              <span>1–2 Days Gulf Delivery</span>
+            </span>
+            <span className="flex items-center gap-2">
+              <CheckCircle2 className="w-4 h-4 text-emerald-400" />
+              <span>Every Monday Payout</span>
+            </span>
           </div>
         </div>
 
