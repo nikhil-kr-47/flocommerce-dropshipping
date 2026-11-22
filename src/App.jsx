@@ -69,7 +69,7 @@ export default function App() {
       {/* Footer */}
       <Footer />
 
-      {/* Qualification Modal (The 4 Dropdown Questions & Google Sheet Submission) */}
+      {/* Qualification Modal (The 4 Dropdown Questions & Evoc CRM Submission) */}
       <QualificationModal
         isOpen={isModalOpen}
         onClose={() => setIsModalOpen(false)}

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { QUALIFICATION_QUESTIONS } from '../data/questions';
-import { submitLeadToGoogleSheet } from '../services/sheetService';
+import { submitLead } from '../services/leadService';
 import confetti from 'canvas-confetti';
 import { CheckCircle2, ChevronRight, ChevronLeft, AlertCircle, X, ArrowRight } from 'lucide-react';
 
@@ -80,7 +80,7 @@ export default function QualificationModal({ isOpen, onClose, initialData = { na
     setErrorMsg('');
 
     try {
-      await submitLeadToGoogleSheet(formData);
+      await submitLead(formData);
       setIsSuccess(true);
 
       // Meta Pixel Event for Completed Application
@@ -227,7 +227,6 @@ export default function QualificationModal({ isOpen, onClose, initialData = { na
               </div>
             </div>
           ) : (
-            /* SUCCESS STATE - Clean confirmation with NO WhatsApp & NO Google Sheet links */
             <div className="py-4 text-center">
               <div className="w-12 h-12 rounded-full bg-emerald-500/20 border-2 border-emerald-400 text-emerald-400 flex items-center justify-center mx-auto mb-3">
                 <CheckCircle2 className="w-7 h-7" />
