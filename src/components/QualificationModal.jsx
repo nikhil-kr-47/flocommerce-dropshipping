@@ -82,6 +82,21 @@ export default function QualificationModal({ isOpen, onClose, initialData = { na
     try {
       await submitLeadToGoogleSheet(formData);
       setIsSuccess(true);
+
+      // Meta Pixel Event for Completed Application
+      if (typeof window !== 'undefined' && typeof window.fbq === 'function') {
+        try {
+          window.fbq('track', 'CompleteRegistration', {
+            content_name: 'GCC Store Qualification Completed',
+            currency: 'INR',
+            value: 20000,
+            status: true
+          });
+        } catch (e) {
+          console.debug('Pixel track notice:', e);
+        }
+      }
+
       confetti({
         particleCount: 80,
         spread: 60,

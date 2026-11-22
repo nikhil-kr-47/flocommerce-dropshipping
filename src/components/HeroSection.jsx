@@ -17,6 +17,23 @@ export default function HeroSection({ onStartApplication }) {
       return;
     }
     setError('');
+
+    // Meta Pixel event on Start Now button
+    if (typeof window !== 'undefined' && typeof window.fbq === 'function') {
+      try {
+        window.fbq('track', 'Lead', {
+          content_name: 'Start Now Lead Form',
+          currency: 'INR',
+          value: 20000
+        });
+        window.fbq('trackCustom', 'StartNowClick', {
+          button_name: 'Start now'
+        });
+      } catch (err) {
+        console.debug('Pixel track notice:', err);
+      }
+    }
+
     // Trigger qualification modal with name and phone
     onStartApplication({ name: name.trim(), phone: phone.trim() });
   };
