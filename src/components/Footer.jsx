@@ -14,9 +14,9 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row items-center justify-between gap-6 pb-6 border-b border-slate-800/80">
           <div className="flex items-center gap-3">
             <img 
-              src="/flocommerce-logo.jpg" 
+              src="/flocommerce-logo.png" 
               alt="FloCommerce" 
-              className="h-7 w-auto object-contain rounded-md"
+              className="h-7 sm:h-8 w-auto object-contain"
             />
             <span className="block text-[11px] text-slate-500">
               Dropshipping in the Gulf · Powered by Zambeel

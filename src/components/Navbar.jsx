@@ -31,11 +31,11 @@ export default function Navbar() {
           {/* Logo */}
           <div className="flex items-center gap-3">
             <img 
-              src="/flocommerce-logo.jpg" 
+              src="/flocommerce-logo.png" 
               alt="FloCommerce" 
-              className="h-8 sm:h-9 w-auto object-contain rounded-md"
+              className="h-8 sm:h-9 md:h-10 w-auto object-contain"
             />
-            <span className="hidden sm:inline-block px-2 py-0.5 rounded-full bg-slate-800 text-[10px] text-slate-400 tracking-wider uppercase font-semibold border border-slate-700">
+            <span className="hidden sm:inline-block px-2.5 py-0.5 rounded-full bg-slate-850 text-[10px] text-slate-300 tracking-wider uppercase font-bold border border-slate-700/80">
               Gulf Dropshipping
             </span>
           </div>
